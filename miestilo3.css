@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 234, 16, 0.699);
+}
+.contenedor{
+    perspective: 250px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+.tarjeta{
+    width: 50px;
+    height: 100px;
+    background-color: rgb(19, 32, 104);
+    font-size: 40px;
+    position: absolute;
+    top: 35px;
+    left: 125px;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 10s linear infinite;
+}
+@keyframes Carrusel{
+    from{
+        transform: rotateY(360deg)
+translateZ(100px);
+        z-index: 10;
+        opacity: 09;
+    }
+    50%{
+        z-index: -10;
+        }
+    to{
+        transform: rotateX(0deg) translateZ(100px);
+    }
+}
+#imagen1{
+    background-image: 
+url(tarjeta/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -1s;
+}
+#imagen1:hover{
+    box-shadow: 0px 0px 10px rgb(2, 3, 82);
+}
+#imagen2{
+    background-image: 
+url(tarjeta/img2.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -3s;
+}
+#imagen2:hover{
+    box-shadow: 0px 0px 10px rgb(2, 3, 82);
+}
+
+#imagen3{
+    background-image: 
+url(tarjeta/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -5s;
+}
+#imagen3:hover{
+    box-shadow: 0px 0px 10px rgb(2, 3, 82);
+}
+
+#imagen4{
+    background-image: 
+url(tarjeta/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -7s;
+}
+#imagen4:hover{
+    box-shadow: 0px 0px 10px rgb(2, 3, 82);
+}
+
+#imagen5{
+    background-image: 
+url(tarjeta/img5.webp);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -9s;
+}
+#imagen5:hover{
+    box-shadow: 0px 0px 10px rgb(2, 3, 82);
+}
+.tarjeta h3{
+    color:rgb(245, 241, 9);
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: rgb(20, 6, 102);
+}
